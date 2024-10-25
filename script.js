@@ -10,6 +10,9 @@ optionImages.forEach((image, index) => {
     image.addEventListener("click", (e) => {
         image.classList.add("active");
 
+        userResult.src = "images/rock.png";
+        cpuResult.src = "images/rock.png";
+
         // Loop through each image again
         optionImages.forEach((image2, index2) => {
             // If current image dosen't match the clicked image
